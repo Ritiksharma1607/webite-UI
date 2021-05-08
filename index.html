@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .division0 {
+            box-sizing: border-box;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+            /* border: 1px solid white; */
+            /* border-radius: 9px; */
+        }
+
+        .logo #logo {
+            height: 65px;
+            width: 65px;
+            border-radius: 100px;
+            margin: 12px 25px;
+
+        }
+
+        .navBar ul {
+            display: flex;
+            /* border: 2px solid black; */
+            align-items: center;
+        }
+
+        .navBar ul li {
+            list-style: none;
+
+        }
+
+        .navBar ul li a {
+            text-decoration: none;
+            margin: 0px 12px;
+            font-size: 1.3rem;
+            color: white;
+            padding: 15px;
+        }
+
+        .navBar ul .search {
+            position: absolute;
+            right: 13px;
+            text-align: right;
+            /* border: 1px solid black; */
+            margin: 0px 2px;
+
+        }
+
+        .navBar ul .search #searchBox {
+            height: 41px;
+            border-radius: 8px;
+            outline: none;
+            width: 176px;
+        }
+
+        .navBar ul .search .sm-btn {
+            height: 39px;
+            width: 74px;
+            border-radius: 10px;
+            margin-left: 10px;
+            background-color: rgb(202, 196, 196);
+            font-size: 1rem;
+            background: none;
+            border: 2px solid white;
+            color: white;
+
+        }
+
+        .navBar ul li a:hover {
+            color: grey;
+        }
+
+        .navBar ul .search .sm-btn:hover {
+
+            background-color: grey;
+
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.6) url(bg.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .division1 {
+            background: rgba(0, 0, 0, 0.6) url(bg.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+
+        }
+
+        .division1 .para {
+            color: white;
+            height: 125px;
+            width: 620px;
+            /* border: 2px solid white; */
+            margin-top: 120px;
+            margin-right: 1px;
+        }
+
+        .division1 .iiimmmggg {
+            /* border: 2px solid white; */
+            height: 90px;
+            margin-top: 90px;
+
+        }
+
+
+        #iimmgg {
+            height: 170px;
+            width: 160px;
+            border-radius: 18px;
+            /* margin-left: 28px; */
+            border: 2px solid white;
+            margin-top: 20px;
+        }
+
+
+        .firstsection .first-half {
+            width: 50%;
+        }
+
+        .secondsection .main-box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 250px;
+            /* border: 2px solid white; */
+        }
+
+
+
+
+
+
+        .division2 .firstsection .main-box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            height: 250px;
+            /* border: 2px solid white; */
+            margin-top: 23px;
+
+        }
+
+        .division2 .firstsection .main-box1 .second-half img {
+            height: 170px;
+            width: 160px;
+            border-radius: 18px;
+            margin-left: 28px;
+            border: 2px solid black;
+        }
+
+
+        .division2 .firstsection .first-half {
+            width: 50%;
+        }
+
+        .division2 .secondsection .main-box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            height: 250px;
+            /* border: 2px solid white; */
+        }
+
+
+        .division2 .secondsection .second-half {
+            width: 50%;
+        }
+
+        .division2 .secondsection .main-box1 .first-half img {
+            height: 170px;
+            width: 160px;
+            border-radius: 18px;
+            margin-left: -23px;
+            border: 2px solid black;
+        }
+
+        .division2 .secondsection .main-box1 .second-half {
+            width: 524px;
+        }
+
+        .division2 .secondsection .main-box1 .second-half p {
+            margin-left: 56px;
+        }
+
+        .division2 {
+            height: 130vh;
+        }
+
+        .division3 {
+            height: 70vh;
+            background-color: rgb(184, 170, 170);
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        #Name,
+        #PhoneNumber,
+        #E-mail,
+        #Address {
+            display: block;
+            margin-top: 2px;
+            margin-bottom: 20px;
+            width: 400px;
+            height: 35px;
+            border-radius: 9px;
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        form {
+            margin-top: 19px;
+        }
+
+        .division1 h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .division3 button {
+            height: 33px;
+            width: 68px;
+            border-radius: 5px;
+            outline: none;
+            margin-left: 160px;
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divbody"></div>
+    <div class="division0">
+        <div class="navBar background">
+            <ul>
+                <div class="logo">
+                    <img id="logo" src="logo.jpg" alt="logoImage">
+                </div>
+                <li class="listItem"> <a href="#"> Home</a> </li>
+                <li class="listItem"> <a href="#"> About</a> </li>
+                <li class="listItem"> <a href="#"> Services</a> </li>
+                <li class="listItem"> <a href="#"> Contact</a> </li>
+                <div class="search">
+                    <input type="search" name="" id="searchBox">
+                    <button class="btn sm-btn">Search</button>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="division1">
+        <div class="para">
+            <h2 style="text-align: center; margin: 8px;">Advancing the future of India</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa minus, ducimus odit distinctio iusto
+                quasi porro ullam Rerum aspernatur maxime, sed, suscipit odit incidunt, quaerat fugiat velit dolorem
+                quos in.The prehistoric
+                invention of shaped stone tools followed by the discovery of how to control fire increased
+            </p>
+        </div>
+        <div class="iiimmmggg">
+            <img id="iimmgg" src="icon3.jpg" alt="iphone image">
+        </div>
+    </div>
+
+    <div class="division2">
+
+        <section class="firstsection">
+            <div class="main-box1">
+                <div class="first-half">
+                    <p>The simplest form of technology is the development and use of basic tools. The prehistoric
+                        invention of shaped stone tools followed by the discovery of how to control fire increased
+                        sources of food. The later Neolithic Revolution extended this, and quadrupled the sustenance
+                        available from a territory. The invention of the wheel helped humans to travel in and
+                        control
+                        their environment. </p>
+                </div>
+                <div class="second-half">
+                    <img src="https://source.unsplash.com/1600x900/?technology,phone" alt="iphone image">
+                </div>
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <div class="main-box1">
+                <div class="first-half">
+                    <img src="https://source.unsplash.com/1600x900/?camera,machine" alt="iphone image2">
+                </div>
+                <div class="second-half">
+                    <p>A mobile phone, cellular phone, cell phone, cellphone, handphone, or hand phone, sometimes
+                        shortened to simply mobile, cell or just phone, is a portable telephone that can make and
+                        receive calls over a radio frequency link while the user is moving within a telephone
+                        service
+                        area. The radio frequency link establishes a connection to the switching systems of a mobile
+                        phone operator. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="firstsection">
+            <div class="main-box1">
+                <div class="first-half">
+                    <p>The simplest form of technology is the development and use of basic tools. The prehistoric
+                        invention of shaped stone tools followed by the discovery of how to control fire increased
+                        sources of food. The later Neolithic Revolution extended this, and quadrupled the sustenance
+                        available from a territory. The invention of the wheel helped humans to travel in and
+                        control
+                        their environment. </p>
+                </div>
+                <div class="second-half">
+                    <img src="https://source.unsplash.com/1600x900/?cables,phone" alt="iphone image">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="division3">
+        <h2 style="text-align: center; margin-top: 9px;">Contact Us</h2>
+        <form action="#">
+            Name: <input type="text" name="name" id="Name" placeholder="enter your name">
+            PhoneNumber: <input type="text" name="naPhoneNumberme" id="PhoneNumber"
+                placeholder="enter your phone number">
+            E-mail:<input type="text" name="E-mail" id="E-mail" placeholder="enter your e-mail">
+            Address:<input type="text" name="E-mail" id="Address" placeholder="enter your address">
+            <button>submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
